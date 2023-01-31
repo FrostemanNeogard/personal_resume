@@ -1,0 +1,38 @@
+{
+  "workExperience": [
+    {
+      "startDate": 2022,
+      "endDate": 0,
+      "employer": "CloudBackend",
+      "title": "Web Developer",
+      "notes": [
+        "Creating applications for the CloudBackend dashboard.",
+        "Helping develop and maintain APIs.",
+        "Tracking and reporting bugs through Jira."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "startDate": 2019,
+      "endDate": 2022,
+      "schoolName": "LBS Stockholm Norra",
+      "orientation": "Upper Secondary School - Game Development",
+      "notes": [
+        "Graduated with a high school diploma.",
+        "My best subjects were maths and programming."
+      ]
+    },
+
+    {
+      "startDate": 2018,
+      "endDate": 2019,
+      "schoolName": "LBS Stockholm Södra",
+      "orientation": "Upper Secondary School - Game Graphics",
+      "notes": [
+        "Switched orientation to Game Development after one year."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+$primary-gold-color: var(--primary-gold-color)
+  
+.left-side-content
+  display: flex
+  flex-direction: column
+  text-align: left
+  gap: 15mm 0
+  padding: 15mm 12mm
+
+  svg
+    color: #f8ce45
+    font-size: 175%
+    transform: translateY(1.7mm)
+    margin-right: 2mm
+
+  h1  
+    margin: 0
+    font-size: 6.5mm
+    font-family: 'Josefin Slab', serif
+    font-weight: 500
+    font-size: 5.5mm
+    letter-spacing: -0.25mm
+
+  .profile-picture
+    height: 50mm
+    width: 50mm
+    margin-left: auto
+    margin-right: auto
+
+    img
+      width: 100%
+      height: auto
+      border-radius: 100%
+      transform: translate(-2mm, -2mm)
+      filter: drop-shadow(2mm 2mm 0 rgba(0, 0, 0, 0.36))
+
+
+  .personal-information
+    word-break: break-all
+
+    h2
+      font-size: 75%
+      margin: 1mm 0
+
+  .skills
+    text-align: left
+    margin-top: auto
+    margin-bottom: auto
+    
+    h1
+      margin-bottom: 5mm
+
+    section
+      display: flex
+      flex-direction: column
+      gap: 4.5mm
+      font-size: 60%
+
+      article 
+
+        div
+          border-radius: 1mm
+
+        .progress-bar
+          width: 100%
+          background: linear-gradient(to bottom,rgba(0, 0, 0, 0) 25%, rgba(207, 207, 207, 1) 50%, rgba(0, 0, 0, 0) 75%)
+          height: 0.6mm
+
+          .fill
+            background-color: $primary-gold-color
+            height: 100%
+            position: relative
+            filter: drop-shadow(0 0 0.5mm $primary-gold-color)
+            
+            &::after
+              content: ""
+              width: 3mm
+              height: 3mm
+              background-color: #f8ce45
+              filter: drop-shadow(0 0 0.8mm $primary-gold-color)
+              border-radius: 100%
+              display: block
+              position: absolute
+              top: 50%
+              left: calc(100% - 1.5mm)
+              transform: translate(-50%, -50%)
+
+        h2
+          margin: 0
+
+  .example-projects
+    h2
+      font-size: 75%
+      margin: 1mm 0
+
+  .spoken-languages
+
+    section
+      display: flex
+      flex-direction: column
+      gap: 5mm
+
+      article
+        padding-top: 2mm
+
+        h2
+          font-family: 'Josefin Slab', serif
+          font-weight: 400
+          margin: 0
+
+        img
+          margin: 0
+          width: 25mm
+          height: auto
+
+

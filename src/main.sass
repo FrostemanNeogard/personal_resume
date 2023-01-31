@@ -1,0 +1,58 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap')
+
+// Stylesheet imports
+@import './styling/LeftSideContent'
+@import './styling/RightSideContent'
+
+// Local variables
+$left-side-content-width: 44%
+
+$left-side-background: linear-gradient(to bottom right,#2c2829, #2F2B2C)
+$left-side-text-color: #cfcfcf
+
+$right-side-background: linear-gradient(to bottom right, #fff, #ddd)
+$right-side-text-color: #111
+
+// Global variables
+:root
+  --primary-gold-color: #f8ce45
+  --secondary-gold-color: #a2790d
+
+// Styling
+html
+  background-color: #505050
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100vw
+  height: 100vh
+*, *::before, *::after
+  box-sizing: border-box
+  
+#root
+  background-color: #FFF
+  font-family: 'Poppins', sans-serif
+  font-weight: 400
+  height: 297mm
+  width: 210mm
+  display: flex
+  flex-direction: row
+
+  h1
+    text-transform: uppercase
+
+  .left-side-content
+    background: $left-side-background
+    width: $left-side-content-width
+    color: $left-side-text-color
+
+  .right-side-content
+    background: $right-side-background
+    width: calc(100% - $left-side-content-width)
+    color: $right-side-text-color
+  
+  a
+    color: #448fff
+    text-decoration: none
