@@ -76,7 +76,7 @@ export default function RightSideContent() {
       <section className="about-me">
         <h1 className='section-header'>About Me</h1>
         <p>
-          I am a self taught 19-year old web developer from Sweden. I specialize in UI/UX with React combined with extensive CSS styling. I am very passionate about all things coding and find web development incredibly fun.
+          I am a self taught young web developer from Sweden. I specialize in UI/UX with React combined with extensive CSS styling. I am very passionate about all things coding and find web development incredibly fun.
         </p>
       </section>
 
