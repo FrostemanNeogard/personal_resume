@@ -60,12 +60,12 @@ export default function LeftSideContent() {
           Competence
         </h1>
         <section>
+          <Skill skill="React" competenceLevel={88} />
           <Skill skill="CSS3 / SASS" competenceLevel={95} />
           <Skill skill="Javascript" competenceLevel={90} />
           <Skill skill="HTML5" competenceLevel={90} />
-          <Skill skill="React" competenceLevel={87} />
           <Skill skill="Git" competenceLevel={82} />
-          <Skill skill="Firebase" competenceLevel={70} />
+          <Skill skill="Firebase" competenceLevel={65} />
           <Skill skill="Node" competenceLevel={75} />
         </section>
       </section>
