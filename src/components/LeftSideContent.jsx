@@ -15,14 +15,13 @@ export default function LeftSideContent() {
   return (
     <section className="left-side-content">
       <article className="profile-picture">
-        {/* <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Profile Picture"/> */}
         <img src="https://cdn.discordapp.com/attachments/882893970915610624/1072776384692371467/image.png" alt="Profile Picture"/>
         
       </article>
 
 
       <article className="personal-information">
-        <h1 className=".section-header">Personal Information</h1>
+        <h1 className="section-header">Personal Information</h1>
 
         <h2>
           <svg viewBox="0 0 1024 1024" fill="currentColor" height="1em" width="1em">

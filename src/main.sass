@@ -1,6 +1,8 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap')
 
 // Stylesheet imports
 @import './styling/LeftSideContent'
@@ -26,10 +28,11 @@ html
   display: flex
   align-items: center
   justify-content: center
-  width: 100vw
-  height: 100vh
 *, *::before, *::after
   box-sizing: border-box
+body
+  margin: 0
+  padding: 0
   
 #root
   background-color: #FFF
@@ -42,6 +45,12 @@ html
 
   h1
     text-transform: uppercase
+
+  .section-header
+    font-family: 'Josefin Slab', serif
+    font-weight: 700 !important
+    font-size: 5.5mm
+    letter-spacing: -0.28mm
 
   .left-side-content
     background: $left-side-background
