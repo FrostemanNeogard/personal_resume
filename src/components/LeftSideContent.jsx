@@ -1,3 +1,5 @@
+import ProfilePicture from '../assets/images/ProfilePicture.png'
+
 export default function LeftSideContent() {
 
   const Skill = (props) => {
@@ -15,7 +17,7 @@ export default function LeftSideContent() {
   return (
     <section className="left-side-content">
       <article className="profile-picture">
-        <img src="https://cdn.discordapp.com/attachments/882893970915610624/1072776384692371467/image.png" alt="Profile Picture"/>
+        <img src={ProfilePicture} alt="Profile Picture"/>
         
       </article>
 
