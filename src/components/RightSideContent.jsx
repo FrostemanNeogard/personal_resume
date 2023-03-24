@@ -6,68 +6,55 @@ export default function RightSideContent() {
   const jsonData = JSON.parse(stringifiedData)
 
   const WorkExperience = () => {
-
     const data = jsonData.workExperience
-    let returnHTML = []
-
-    for (let i = 0; i < data.length; i++) {
-      returnHTML.push (
-        <article key={i}>
-          <h4>{data[i].startDate} - {data[i].endDate == 0 ? "Current" : data[i].endDate}</h4>
-          <h3>{data[i].title}</h3>
-          <h2>{data[i].employer}</h2>
-          {data[i].notes ? <NotesUl data={data[i].notes} /> : null}
-        </article>
-      )
-    }
 
     return (
       <>
-        {returnHTML}
+        {data.map((item, index) => {
+          <article key={index}>
+            <h4>{item.startDate} - {item.endDate == 0 ? "Current" : item.endDate}</h4>
+            <h3>{item.title}</h3>
+            <h2>{item.employer}</h2>
+            {item.notes && <NotesUl data={item.notes} />}
+          </article>
+        })}
       </>
     )
   }
 
   const Education = () => {
-
     const data = jsonData.education
-    let returnHTML = []
-
-    for (let i = 0; i < data.length; i++) {
-      returnHTML.push(
-        <article key={i}>
-          <h4>{data[i].startDate} - {data[i].endDate == 0 ? "Current" : data[i].endDate}</h4>
-          <h3>{data[i].schoolName}</h3>
-          <h2>{data[i].orientation}</h2>
-          {data[i].notes ? <NotesUl data={data[i].notes} /> : null}
-        </article>
-      )
-    }
 
     return (
       <>
-        {returnHTML}
+        {data.map((item, index) => {
+          return (
+            <article key={index}>
+              <h4>{item.startDate} - {item.endDate == 0 ? "Current" : item.endDate}</h4>
+              <h3>{item.schoolName}</h3>
+              <h2>{item.orientation}</h2>
+              {item.notes && <NotesUl data={item.notes} />}
+            </article>
+          )
+        })}
       </>
     )
   }
 
   const NotesUl = (props) => {
-    
-    let liArray = []
-    for (let i = 0; i < props.data.length; i++) {
-      liArray.push(
-        <li key={i}>{props.data[i]}</li>
-      )
-    }
     return (
       <ul>
-        {liArray}
+        {props.data.map((data, index) => {
+          return (
+            <li key={index}>{data}</li>
+          )
+        })}
       </ul>
     )
   }
 
   return (
-    <section className="right-side-content">
+    <main className="right-side-content">
       <section className="header">
         <h1>Liam Frosteman Neogard</h1>
         <h2>Web Developer</h2>
@@ -90,6 +77,6 @@ export default function RightSideContent() {
         <Education />
       </section>
 
-    </section>
+    </main>
   )
 }
