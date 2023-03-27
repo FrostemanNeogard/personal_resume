@@ -11,12 +11,14 @@ export default function RightSideContent() {
     return (
       <>
         {data.map((item, index) => {
-          <article key={index}>
-            <h4>{item.startDate} - {item.endDate == 0 ? "Current" : item.endDate}</h4>
-            <h3>{item.title}</h3>
-            <h2>{item.employer}</h2>
-            {item.notes && <NotesUl data={item.notes} />}
-          </article>
+          return (
+            <article key={index}>
+              <h4>{item.startDate} - {item.endDate == 0 ? "Current" : item.endDate}</h4>
+              <h3>{item.title}</h3>
+              <h2>{item.employer}</h2>
+              {item.notes && <NotesUl data={item.notes} />}
+            </article>
+          )
         })}
       </>
     )
